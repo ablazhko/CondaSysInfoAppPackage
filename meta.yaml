@@ -1,0 +1,21 @@
+{% set version = "1.0.1" %}
+
+package:
+  name: sys-info-app
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/ablazhko/CondaCppApp.git
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake
+    - ninja
+
+about:
+  summary: "Simple C++ sys info app packaged with conda"
