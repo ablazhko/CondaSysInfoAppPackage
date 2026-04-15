@@ -1,6 +1,6 @@
-echo ================================================
+echo ==================================================
 echo === CMake configuration (MSVC + Ninja) started ===
-echo ================================================
+echo ==================================================
 
 mkdir build 2>nul
 cd build
@@ -11,10 +11,10 @@ cmake -S .. -B . ^
 
 if errorlevel 1 exit 1
 
-cmake --build .
+cmake --build . --config Release
 
 if errorlevel 1 exit 1
 
-cmake --install .
+cmake --install . --config Release
 
 if errorlevel 1 exit 1

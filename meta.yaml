@@ -16,6 +16,9 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
-
+  host:
+    - libzip
+  run:
+    - libzip
 about:
   summary: "Simple C++ sys info app packaged with conda"
