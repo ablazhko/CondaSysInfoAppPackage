@@ -21,5 +21,10 @@ requirements:
     - libzip
   run:
     - libzip
+
+test:
+  commands:
+    - SystemInfoApp.exe
+
 about:
   summary: "Simple C++ sys info app packaged with conda"
